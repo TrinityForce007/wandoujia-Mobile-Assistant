@@ -1,21 +1,24 @@
-# graduation-project-2
+# 豌豆荚手机助网站
 
 > A Vue.js project
 
-## Build Setup
+## 安装使用
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 连接数据库服务，监听3000端口
+cd src/server
+node index
 
-# build for production with minification
-npm run build
+# 打包
+cnpm run dev
 
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+手机号：13994545797
+邮箱：wwf_work@163.com
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
