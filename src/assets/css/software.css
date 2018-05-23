@@ -1,0 +1,431 @@
+/*software-应用界面-开始*/
+.row1-col-l-1, .row1-col-m-1 {
+  height: 200px;
+}
+
+/*dailyRecommendation每日推荐-开始*/
+.dailyRecommendation {
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+}
+
+.dailyRecommendation img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 55px;
+  height: 55px;
+}
+
+.dailyRecommendation button {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 68px;
+  height: 24px;
+  border: 1px solid #d1d1d1;
+}
+
+.dailyRecommendation button:hover {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.dailyRecommendation p {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.dailyDownloadRank + .title-bar {
+  border-top: 1px solid #d1d1d1;
+}
+
+/*dailyRecommendation每日推荐-结束*/
+
+/*col-m 轮播图-开始*/
+#myCarousel {
+  width: 100%;
+  height: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+/*col-m 轮播图-结束*/
+
+/*每日下载排行-开始*/
+.dailyDownloadRank {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.dailyDownloadRank li {
+  margin: 17.7px 0;
+  height: 45px;
+  position: relative;
+  padding-top: 0;
+}
+
+.dailyDownloadRank li:hover button {
+  display: block;
+}
+
+.dailyDownloadRank-icon {
+  font-size: 25px !important;
+  position: absolute !important;
+  left: 0.5px !important;
+  top: 10px !important;
+}
+
+.dailyDownloadRank li:nth-of-type(1) .dailyDownloadRank-icon {
+  color: rgb(243, 37, 23);
+}
+
+.dailyDownloadRank li:nth-of-type(2) .dailyDownloadRank-icon {
+
+  color: rgb(247, 126, 19);
+}
+
+.dailyDownloadRank li:nth-of-type(3) .dailyDownloadRank-icon {
+  color: rgb(239, 171, 25);
+}
+
+.dailyDownloadRank li:nth-of-type(n+4) .dailyDownloadRank-icon {
+  display: none;
+}
+
+.dailyDownloadRank-No {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.dailyDownloadRank li:nth-of-type(1) .dailyDownloadRank-No {
+  color: white;
+}
+
+.dailyDownloadRank li:nth-of-type(2) .dailyDownloadRank-No {
+  color: white;
+}
+
+.dailyDownloadRank li:nth-of-type(3) .dailyDownloadRank-No {
+  color: white;
+}
+
+.dailyDownloadRank li a img {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 40px;
+}
+
+.dailyDownloadRank div {
+  position: absolute;
+  left: 103px;
+  top: -8px;
+  width: 70px;
+  overflow: hidden;
+}
+
+.dailyDownloadRank button {
+  width: 68px;
+  height: 24px;
+  background-color: green;
+  position: absolute;
+  top: 21px;
+  left: 94px;
+  color: white;
+  display: none;
+}
+
+/*每日下载排行-结束*/
+
+/*软件分类 softw-classification-开始*/
+.software-classification > li {
+  width: 81px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 19px;
+  margin-bottom: 17px;
+}
+
+.software-classification > li i {
+  color: rgb(3, 184, 207);
+  font-size: 20px;
+}
+
+/*软件分类 softw-classification-结束*/
+
+/*优秀新软件-开始*/
+.newSoftware {
+  padding: 0 9px !important;
+}
+
+.newSoftware li {
+  float: left;
+  text-align: center;
+  padding: 0 14px;
+}
+
+.newSoftware li img {
+  width: 55px;
+  height: 55px;
+  margin: 12px;
+}
+
+.newSoftware button {
+  margin-bottom: 12px;
+  width: 68px;
+  height: 24px;
+}
+
+.newSoftware button:hover {
+  background-color: green;
+  color: white;
+}
+
+/*优秀新软件-结束*/
+/*热门标签-开始*/
+.row2-left-top {
+  height: 326px;
+}
+
+.popularTags {
+  overflow: hidden;
+  padding: 9px 0;
+}
+
+.popularTags li {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.popularTags li button {
+  width: 75px;
+  height: 20px;
+  border: none;
+  margin: 12px 0;
+}
+
+/*热门标签-结束*/
+
+/*新品速递-开始*/
+.row2-left-bottom {
+  height: 325px;
+}
+
+.row2-left-bottom ul li {
+  overflow: hidden;
+  margin: 19px 0;
+}
+
+.row2-left-bottom ul  div, .row2-left-bottom ul img, .row2-left-bottom ul button {
+  float: left;
+}
+
+.row2-left-bottom ul a img {
+  width: 45px;
+  height: 45px;
+  margin: 0 12px;
+}
+
+.row2-left-bottom ul  div {
+  margin-top: -8px;
+  text-align: center;
+  width: 56px;
+
+}
+
+.row2-left-bottom ul  button {
+  width: 57px;
+  height: 24px;
+  border: none;
+  margin-top: 11px;
+  margin-left: 5px;
+}
+
+.row2-left-bottom ul  button:hover {
+  background-color: green;
+  color: white;
+}
+
+.row2-left-bottom ul  h5{
+  max-width: 56px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*新品速递-结束*/
+/*software-应用界面-开始*/
+
+/*software-classification页面-开始*/
+/*左侧分类列表-开始*/
+.software-classification2 {
+  text-align: center;
+  font-size: 14px;
+}
+
+.software-classification2 > li {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+.software-classification2 > li i {
+  color: rgb(3, 184, 207);
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+/*左侧分类列表-结束*/
+/*头部横条列表-开始*/
+.classification-right-top {
+  padding-left: 12px;
+}
+
+.software-classification3 {
+  height: 40px;
+  margin-bottom: 0 !important;
+}
+
+.software-classification3 li {
+  height: 100%;
+  line-height: 40px;
+}
+
+/*头部横条列表-结束*/
+/*应用列表-开始*/
+.classification-right-bottom {
+  padding-right: -2px;
+}
+
+.classification-right-bottom > ul > li {
+  border-bottom: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+  line-height: 20px !important;
+  overflow: hidden;
+  float: left;
+  padding: 12px 12px 12px 0;
+  width: 20%;
+}
+
+.classification-right-bottom > ul > li a:nth-child(5n) {
+  border-right: none;
+  width: 196px;
+}
+
+.classification-right-bottom > ul > li a > img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0 12px;
+}
+
+.classification-right-bottom > ul > li  > div {
+  float: left;
+  text-align: center;
+  width: 90px;
+  overflow: hidden;
+}
+
+.classification-right-bottom > ul > li  > div span {
+  font-size: 12px;
+  color: #99999a;
+}
+
+.classification-right-bottom > ul > li  > div .app-name {
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+}
+
+.classification-right-bottom > ul > li  > div button {
+  width: 59px;
+  height: 23px;
+  border: 1px solid #d1d1d1;
+  font-size: 13px;
+}
+
+.classification-right-bottom > ul > li  > div button:hover {
+  background-color: green;
+  border: none;
+  color: white;
+}
+
+/*应用列表-结束*/
+/*software-classification页面-结束*/
+
+/*应用详情界面-开始*/
+/*头部-开始*/
+.software-detail-head {
+  overflow: hidden;
+  height: 200px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.software-detail-head > img, .software-detail-head div {
+  float: left;
+}
+
+.software-detail-head > img {
+  height: 80%;
+  margin-top: 20px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.software-detail-head > div:first-of-type {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.software-detail-head > div:last-of-type img {
+  height: 173px;
+}
+
+.software-detail-head > div:last-of-type {
+  position: absolute;
+  right: 140px;
+  top: 50%;
+  margin-top: -86.5px;
+}
+
+.software-detail-head button {
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  left: 192px;
+  top: 30px;
+}
+
+.software-detail-head button:first-of-type {
+  top: 95px;
+}
+
+/*头部-结束*/
+
+/*应用截图-开始*/
+.software-detail-img > div:last-of-type {
+  padding: 12px 20px;
+}
+
+.software-detail-img img {
+  margin-right: 12px;
+  width: 20%;
+}
+
+/*应用截图-结束*/
+/*应用简介-开始*/
+.software-detail-intr > div:last-of-type {
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #aaa;
+  text-indent: 2em;
+}
+
+/*应用简介-结束*/
+/*应用详情界面-结束*/

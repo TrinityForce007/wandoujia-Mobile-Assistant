@@ -1,0 +1,102 @@
+/*豌豆荚 基础样式*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  color: #333;
+  -webkit-text-size-adjust: none;
+}
+
+html, body {
+  overflow-x: scroll;
+}
+
+.container {
+  min-width: 1170px !important;
+  font-family: "Microsoft YaHei UI";
+}
+span{
+  cursor: default !important;
+}
+a{
+  cursor:pointer;
+}
+/*高度为40的标题格  开始*/
+.title-bar {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #d1d1d1;
+  background: white;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title-bar > * {
+  line-height: 40px;
+}
+
+.title-bar :last-child {
+  float: right;
+}
+
+.title-bar :first-child {
+  float: left;
+}
+
+/*结束*/
+
+/*col-box 白色背景 边框 阴影*/
+.col-box {
+  background-color: white;
+  box-shadow: 0 0 3px gainsboro;
+  margin-top: 12px;
+  border: 1px solid #d1d1d1;
+  overflow: hidden;
+}
+
+/*栅格 去除bootstrap自带的的padding*/
+.col {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 12px;
+  font-family: "Microsoft YaHei UI";
+}
+
+/*为了隔断效果，补回前面消掉的padding 给中间一列 或者左侧一列添加*/
+.col-m {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-shadow: none;
+}
+.col-l {
+  padding-left: 15px !important;
+  padding-right: 0 !important;
+  box-shadow: none;
+}
+.col-r{
+  padding-left: 0 !important;
+  padding-right: 15px !important;
+  box-shadow: none;
+}
+
+button{
+  font-size: 12px !important;
+}

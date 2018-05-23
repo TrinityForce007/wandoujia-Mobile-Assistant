@@ -1,0 +1,151 @@
+/*公共头部*/
+.hover-green:hover > * {
+  color: green;
+}
+
+.foot span, a {
+  color: #aaa;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 17px;
+
+}
+
+.navbar-default {
+  background-color: white !important;
+}
+
+.common-head {
+  background-color: white;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/*结束*/
+/*公共底部*/
+.foot {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.foot1 {
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.foot1 ul {
+  overflow: hidden;
+}
+
+.foot1 ul > li {
+  width: 25% !important;
+  float: left;
+}
+
+.foot1 ul > li:first-child i {
+  font-size: 14px;
+  color: green;
+  margin-right: 12px;
+}
+
+.foot1 ul > li:last-child i {
+  font-size: 40px;
+  margin: 12px 12px 0 0;
+  color: green;
+}
+
+.foot2 {
+  text-align: center;
+}
+
+.foot-b {
+  color: black !important;
+  font-weight: bold;
+}
+
+.foot1 span, a {
+  color: #aaa !important;
+}
+
+/*结束*/
+
+/*评论区 开始*/
+.addComment {
+  padding: 0 12px;
+  overflow: hidden;
+  position: relative;
+}
+.addComment>textarea{
+  margin-top: 12px;
+}
+.addComment button {
+  float: right;
+  margin-right: 12px;
+  margin-top: 12px;
+  width: 100px;
+}
+
+
+.app-detail-comment li {
+  padding: 6px 12px;
+  border-bottom: 1px solid #d1d1d1;
+  overflow: hidden;
+}
+
+.comment-nickname {
+  color: green;
+  font-size: 18px;
+}
+
+.comment-p {
+  font-size: 13px;
+  text-indent: 2em;
+  width: 100%;
+}
+
+.comment-time {
+  font-size: 12px;
+}
+
+.comment-p p {
+  word-wrap: break-word
+}
+
+.comment-approve {
+  font-size: 12px;
+  margin-left: 25px;
+}
+.addComment-success-hide{
+  display: none;
+}
+.addCommentSuccess{
+  display: block !important;
+  position: absolute;
+  left: 0;
+  /*top: 0;*/
+  right: 0;
+  /*bottom: 0;*/
+  margin: 0 auto;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  background-color: green;
+  text-align: center;
+}
+.noComment{
+  height: 87px;
+  line-height: 87px;
+  width: 100%;
+  border-bottom:1px solid #d1d1d1 ;
+  text-align: center;
+}
+/*评论区 结束*/

@@ -1,0 +1,119 @@
+/*豌豆荚设计奖-开始*/
+.row3-top-left {
+  height: 200px;
+  overflow: hidden;
+}
+
+.row3-top-left > img {
+  float: left;
+
+}
+
+.row3-top-left > img:first-of-type {
+  height: 70%;
+  margin: 9px 12px;
+}
+
+.row3-top-left div:last-of-type {
+  float: left;
+  width: 200px;
+  margin-top: 13px;
+}
+
+.row3-top-left div:last-of-type p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.row3-top-left button {
+  width: 68px;
+  height: 24px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+.row3-img2 {
+  height: 56%;
+  margin-top: 23px;
+  margin-right: 12px;
+  float: right !important;
+}
+
+/*豌豆荚设计奖-结束*/
+
+/*游戏分类*/
+.game-classification {
+  overflow: hidden;
+}
+
+.game-classification li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin: 19px 0;
+}
+
+/*游戏分类-结束*/
+.row3-bottom-m, .row-bottom-left, .row4-top-m, .row4-top-left {
+  height: 326px !important;
+  overflow: hidden;
+}
+.gamelist-name{
+  white-space: nowrap;
+}
+/*游戏推荐*/
+.m-sort {
+  overflow: hidden;
+}
+
+.m-sort li {
+  width: 14.2857142%;
+  float: left;
+  text-align: center;
+}
+
+.m-sort li p {
+  font-size: 12px;
+}
+
+.m-sort img {
+  width: 55px;
+  height: 55px;
+  margin: 12px 0;
+}
+
+.m-sort button {
+  margin-bottom: 12px;
+  width: 68px;
+  height: 24px;
+}
+
+.m-sort button:hover {
+  background-color: green;
+  color: white;
+}
+
+/*游戏推荐-结束*/
+
+/*厂商大作-开始*/
+.row4-bottom-left li {
+  width: 50%;
+  border-right: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  float: left;
+  text-align: center;
+}
+
+.row4-bottom-left li:nth-child(2n) {
+  border-right: none;
+}
+
+/*厂商大作-结束*/
+
+/**/
+.row4-bottom > div:last-of-type > div {
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+}
