@@ -218,8 +218,8 @@
           <!--网游排行/单机排行-->
           <div class="row4-right  col-box">
             <div class="title-bar">
-              <span @click="select16('1')">网游排行</span>
-              <span @click="select16('0')">单机排行</span>
+              <span @click="get_dowmload_rank('1')">网游排行</span>
+              <span @click="get_dowmload_rank('0')">单机排行</span>
             </div>
             <ul class="dailyDownloadRank">
               <li v-for="(gameList3,index) in gameLists3" :key="gameList3.id" v-if="index<9">
@@ -259,14 +259,14 @@
         gameLists4: '',
       }
     }, created() {
-      this.select14();//游戏下载排行榜/热门游戏
-      this.select15();//推荐游戏
-      this.select16();//网游/单机下载排行榜
-      this.select20();//新品速递
+      this.get_popular_game();//游戏下载排行榜/热门游戏
+      this.get_recommend_game();//推荐游戏
+      this.get_dowmload_rank();//网游/单机下载排行榜
+      this.get_new_game();//新品速递
     },
     methods: {
       //游戏下载排行/热门游戏
-      select14: function () {
+      get_popular_game: function () {
         var self = this;
         this.$http.get('/api/select14', {
           params: {}
@@ -276,7 +276,7 @@
           console.log(error);
         })
       },
-      select15: function () {
+      get_recommend_game: function () {
         var self = this;
         this.$http.get('/api/select15', {
           params: {}
@@ -286,7 +286,7 @@
           console.log(error);
         })
       },
-      select16: function (ol) {
+      get_dowmload_rank: function (ol) {
         var params = '';
         var self = this;
         if (ol) {
@@ -316,7 +316,7 @@
         })
       },
       //新品速递
-      select20: function (id) {
+      get_new_game: function (id) {
         var self = this;
         this.$http.get('/api/select20', {
           params: {}

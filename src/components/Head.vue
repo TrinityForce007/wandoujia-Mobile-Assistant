@@ -52,7 +52,7 @@
                 </router-link>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right" v-if="nick==='' && nickname===''">
+            <ul class="nav navbar-nav navbar-right" v-if="nickname===''">
               <li class="nav-login navbar-right">
                 <a class="hover-green" @click="login">
                   <span>登录</span>
@@ -65,16 +65,10 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right" v-else>
-              <li class="nav navbar-right nav-nickname" v-if="nick!==''">
-                <a>
-                  <span>{{nick}}</span>
-                  <span @click="loginOut">退出登录</span>
-                </a>
-              </li>
-              <li class="nav navbar-right nav-nickname" v-else>
+              <li class="nav navbar-right nav-nickname">
                 <a>
                   <span>{{nickname}}</span>
-                  <span @click="loginOut">退出登录</span>
+                  <button @click="loginOut">退出登录</button>
                 </a>
               </li>
             </ul>
@@ -95,9 +89,17 @@
         nickname: '',
       }
     },
-    props: ['nick'],
     created() {
       this.loginCheck()
+    },
+    props: ['nick'],
+    watch: {
+      nick() {
+        console.log(this.nick);
+        if (this.nick){
+          this.loginCheck();
+        }
+      }
     },
     methods: {
       login: function () {
@@ -109,12 +111,14 @@
       },
       //每次刷新页面都验证是否登录
       loginCheck: function () {
-        this.nick = '';
-        this.username = '';
+        console.log("执行登录检查");
         if (document.cookie.indexOf('username') < 0) {
-          //  没有用户登录
+          //无用户登录
+          console.log("无用户登录");
+          this.nickname='';
         } else {
-          // 有用户登录
+          //有用户登录
+          console.log("有用户登录");
           var self = this;
           this.$http.post('/api/login', {
             username: document.cookie.split(";")[0].split("=")[1],
@@ -125,7 +129,7 @@
               // 验证失败;
               self.$router.push({path: '/login?redirect=register'})
             } else {
-              //登录成功,将昵称复制给nickname 页面如果
+              //登录成功,将昵称复制给nickname
               // 验证成功
               self.nickname = response.data[0].nickname;
             }
@@ -135,7 +139,6 @@
         }
       },
       loginOut: function () {
-        //删除cookie
         document.cookie = 'username' + '=;  expires=Thu, 01 Jan 1970 00:00:01 GMT;';
         document.cookie = 'password' + '=;  expires=Thu, 01 Jan 1970 00:00:01 GMT;';
         document.cookie = 'nickname' + '=;  expires=Thu, 01 Jan 1970 00:00:01 GMT;';
@@ -146,9 +149,5 @@
 </script>
 
 <style scoped>
-  /*.container{*/
-  /*width: 1200px !important;*/
-  /*border: 1px solid #d1d1d1;*/
-  /*border-top: none;*/
-  /*}*/
+
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="register">
-    <div class="register-box" v-bind:style='{height:bbb}'>
-      <img src="../assets/img-software/home.jpg" alt="" id="home-bg" v-bind:style='{width:aaa,height:bbb}'>
+    <div class="register-box" v-bind:style='{height:get_availHeight}'>
+      <img src="../assets/img-software/home.jpg" alt="" id="home-bg" v-bind:style='{width:get_availWidth,height:get_availHeight}'>
       <div class="register-warp">
         <div class="title-bar">
           <span>注册豌豆荚用户</span>
@@ -17,7 +17,7 @@
             <option>男</option>
             <option>女</option>
           </select>
-          <button @click="submit">注册</button>
+          <button @click="register_submit">注册</button>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
       }
     },
     methods:{
-      submit:function () {
+      register_submit:function () {
         var self=this;
         this.$http.post('/api/register', {
           username:this.username,
@@ -52,10 +52,10 @@
       }
     },
     computed: {
-      aaa: function () {
+      get_availWidth: function () {
         return window.screen.availWidth + "px";
       },
-      bbb: function () {
+      get_availHeight: function () {
         return +window.screen.availHeight - 100 + "px";
       }
     }

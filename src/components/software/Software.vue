@@ -329,12 +329,12 @@
       }
     },
     created() {
-      this.select4();
-      this.select5();
-      this.select6();
-      this.select7();
-      this.select8();
-      this.select9();
+      this.get_polular_download();
+      this.get_daily_recommendation();
+      this.get_new_software();
+      this.get_popular_app();
+      this.get_editor_choice();
+      this.get_week_download_rank();
 
     },
     methods: {
@@ -350,7 +350,7 @@
         })
       },
       //热门下载排行榜
-      select4: function () {
+      get_polular_download: function () {
         var self = this;
         this.$http.get('/api/select4', {
           params: {}
@@ -361,7 +361,7 @@
         })
       },
       //优秀新软件
-      select6: function () {
+      get_new_software: function () {
         var self = this;
         this.$http.get('/api/select6', {
           params: {}
@@ -372,7 +372,7 @@
         })
       },
       //更换每日推荐
-      select5: function () {
+      get_daily_recommendation: function () {
         var self = this;
         this.$http.get('/api/select5', {
           params: {}
@@ -383,7 +383,7 @@
         })
       },
       //更换热门应用
-      select7: function () {
+      get_popular_app: function () {
         var self = this;
         this.$http.get('/api/select7', {
           params: {}
@@ -394,7 +394,7 @@
         })
       },
       //更换编辑推荐
-      select8: function () {
+      get_editor_choice: function () {
         var self = this;
         this.$http.get('/api/select8', {
           params: {}
@@ -405,7 +405,7 @@
         })
       },
       //最近一周下载排行
-      select9: function () {
+      get_week_download_rank: function () {
         var self = this;
         this.$http.get('/api/select9', {
           params: {}
