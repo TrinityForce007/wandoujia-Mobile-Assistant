@@ -15,8 +15,7 @@ node index
 # 打包
 cnpm run dev
 
-# build for production and view the bundle analyzer report
-npm run build --report
+
 ```
 手机号：13994545797
 邮箱：wwf_work@163.com
