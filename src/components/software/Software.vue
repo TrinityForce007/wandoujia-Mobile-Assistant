@@ -351,7 +351,7 @@
       },
       //热门下载排行榜
       get_polular_download: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select4', {
           params: {}
         }).then(function (res) {
@@ -362,7 +362,7 @@
       },
       //优秀新软件
       get_new_software: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select6', {
           params: {}
         }).then(function (res) {
@@ -373,7 +373,7 @@
       },
       //更换每日推荐
       get_daily_recommendation: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select5', {
           params: {}
         }).then(function (res) {
@@ -384,7 +384,7 @@
       },
       //更换热门应用
       get_popular_app: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select7', {
           params: {}
         }).then(function (res) {
@@ -395,7 +395,7 @@
       },
       //更换编辑推荐
       get_editor_choice: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select8', {
           params: {}
         }).then(function (res) {
@@ -406,7 +406,7 @@
       },
       //最近一周下载排行
       get_week_download_rank: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select9', {
           params: {}
         }).then(function (res) {

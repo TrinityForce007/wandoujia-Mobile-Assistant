@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <commonHead :nick.sync="nickname"></commonHead>
-    <router-view @transferNick="getNickname"></router-view>
+    <transition>
+      <router-view @transferNick="getNickname"></router-view>
+    </transition>
     <commonFoot></commonFoot>
   </div>
 </template>

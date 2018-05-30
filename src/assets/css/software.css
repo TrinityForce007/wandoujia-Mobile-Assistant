@@ -49,8 +49,8 @@
 }
 
 .item img {
-  width: 100%;
-  height: 100%;
+  /*width: 100%;*/
+  height: 100% !important;
 }
 
 /*col-m 轮播图-结束*/
@@ -62,10 +62,13 @@
 }
 
 .dailyDownloadRank li {
-  margin: 17.7px 0;
+  margin: 10px 0;
   height: 45px;
   position: relative;
   padding-top: 0;
+  /*border: 1px solid red;*/
+  width: 100%;
+  float: left;
 }
 
 .dailyDownloadRank li:hover button {
@@ -144,11 +147,11 @@
 
 /*软件分类 softw-classification-开始*/
 .software-classification > li {
-  width: 81px;
+  width: 50%;
   float: left;
-  margin-left: 12px;
   margin-top: 19px;
   margin-bottom: 17px;
+  text-align: center;
 }
 
 .software-classification > li i {
@@ -160,13 +163,17 @@
 
 /*优秀新软件-开始*/
 .newSoftware {
-  padding: 0 9px !important;
+  /*padding: 0 9px !important;*/
 }
-
+.newSoftware p{
+  white-space: nowrap;
+}
 .newSoftware li {
   float: left;
   text-align: center;
   padding: 0 14px;
+  width: 14.2857%;
+  /*border: 1px solid red;*/
 }
 
 .newSoftware li img {
@@ -189,18 +196,20 @@
 /*优秀新软件-结束*/
 /*热门标签-开始*/
 .row2-left-top {
-  height: 326px;
+  /*height: 326px;*/
 }
 
 .popularTags {
   overflow: hidden;
   padding: 9px 0;
+  margin-bottom: 0 !important;
 }
 
 .popularTags li {
   width: 50%;
   float: left;
   text-align: center;
+  /*margin-top: 10px;*/
 }
 
 .popularTags li button {
@@ -222,7 +231,7 @@
   margin: 19px 0;
 }
 
-.row2-left-bottom ul  div, .row2-left-bottom ul img, .row2-left-bottom ul button {
+.row2-left-bottom ul div, .row2-left-bottom ul img, .row2-left-bottom ul button {
   float: left;
 }
 
@@ -232,14 +241,14 @@
   margin: 0 12px;
 }
 
-.row2-left-bottom ul  div {
+.row2-left-bottom ul div {
   margin-top: -8px;
   text-align: center;
   width: 56px;
 
 }
 
-.row2-left-bottom ul  button {
+.row2-left-bottom ul button {
   width: 57px;
   height: 24px;
   border: none;
@@ -247,12 +256,12 @@
   margin-left: 5px;
 }
 
-.row2-left-bottom ul  button:hover {
+.row2-left-bottom ul button:hover {
   background-color: green;
   color: white;
 }
 
-.row2-left-bottom ul  h5{
+.row2-left-bottom ul h5 {
   max-width: 56px;
   overflow: hidden;
   white-space: nowrap;
@@ -266,12 +275,15 @@
 .software-classification2 {
   text-align: center;
   font-size: 14px;
+  overflow: hidden;
 }
 
 .software-classification2 > li {
   text-align: center;
   margin: 10px 0;
   line-height: 20px;
+  float: left;
+  width: 100%;
 }
 
 .software-classification2 > li i {
@@ -310,6 +322,9 @@
   float: left;
   padding: 12px 12px 12px 0;
   width: 20%;
+  min-width: 186px;
+  height: 88.8px;
+  box-sizing: border-box;
 }
 
 .classification-right-bottom > ul > li a:nth-child(5n) {
@@ -321,35 +336,36 @@
   float: left;
   width: 60px;
   height: 60px;
-  margin: 0 12px;
+  margin-left: 12px;
 }
 
-.classification-right-bottom > ul > li  > div {
-  float: left;
+.classification-right-bottom > ul > li > div {
+  /*float: left;*/
   text-align: center;
   width: 90px;
   overflow: hidden;
+  margin-left: 85px;
 }
 
-.classification-right-bottom > ul > li  > div span {
+.classification-right-bottom > ul > li > div span {
   font-size: 12px;
   color: #99999a;
 }
 
-.classification-right-bottom > ul > li  > div .app-name {
+.classification-right-bottom > ul > li > div .app-name {
   font-size: 14px;
   color: black;
   white-space: nowrap;
 }
 
-.classification-right-bottom > ul > li  > div button {
+.classification-right-bottom > ul > li > div button {
   width: 59px;
   height: 23px;
   border: 1px solid #d1d1d1;
   font-size: 13px;
 }
 
-.classification-right-bottom > ul > li  > div button:hover {
+.classification-right-bottom > ul > li > div button:hover {
   background-color: green;
   border: none;
   color: white;
@@ -429,3 +445,66 @@
 
 /*应用简介-结束*/
 /*应用详情界面-结束*/
+
+/*媒体查询*/
+@media screen and (min-width: 350px)and (max-width: 450px) {
+  .col {
+    padding: 0 12px !important;
+  }
+
+  .newSoftware li {
+    width: 25%;
+  }
+
+  .newSoftware li:nth-of-type(n+13) {
+    display: none;
+  }
+
+  .dailyDownloadRank li {
+    width: 50%;
+  }
+
+  .dailyDownloadRank li:last-of-type {
+    display: none;
+  }
+
+  .row1-col-l-1 {
+    display: none;
+  }
+
+  .software-classification > li {
+    width: 20%;
+  }
+
+  .row2-left-bottom {
+    display: none;
+  }
+
+  .popularTags li {
+    width: 20%;
+    /*height: 20px;*/
+  }
+
+  .popularTags li:nth-of-type(n+11) {
+    display: none;
+  }
+
+  .popularTags {
+    /*margin-bottom: 0 !simportant;*/
+  }
+
+  .software-classification2 > li {
+    width: 33.333333333%;
+  }
+
+  .software-classification2 > li:nth-of-type(n+10) {
+    display: none;
+  }
+
+  .classification-right-bottom > ul > li {
+    width: 50%;
+  }
+  .classification-right-bottom > ul > li > div{
+    margin-left: 90px;
+  }
+}

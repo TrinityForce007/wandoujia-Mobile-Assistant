@@ -149,3 +149,9 @@
   text-align: center;
 }
 /*评论区 结束*/
+
+@media screen and (min-width:350px) and (max-width: 450px){
+  .foot1 ul > li{
+    width: 50% !important;
+  }
+}

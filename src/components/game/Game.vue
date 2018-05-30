@@ -2,7 +2,7 @@
   <div class="game">
     <div class="container">
       <!--第一部分-->
-      <div class="row3">
+      <div class="row3 clearfix">
         <div class="col-md-10 col-r">
           <!--豌豆荚设计奖-->
           <div class="row3-top-left col-box">
@@ -18,7 +18,7 @@
             <img src="../../assets/img-game/第五人格-lr1.jpg" alt="" class="row3-img2">
             <img src="../../assets/img-game/第五人格-lr2.png" alt="" class="row3-img2">
           </div>
-          <div class="col-md-3 col col-box">
+          <div class="col-md-3 padding-none col-box">
             <!--游戏分类-->
             <div class="row3-bottom-left">
               <div class="title-bar">
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2 col col-box">
+        <div class="col-md-2 padding-none col-box">
           <!--游戏下载排行榜-->
           <div class="row3-right">
             <div class="title-bar">
@@ -127,8 +127,8 @@
         </div>
       </div>
       <!--第二部分-->
-      <div class="row4">
-        <div class="col-md-2 col">
+      <div class="row4 clearfix">
+        <div class="col-md-2 padding-none">
           <!--新品速递-->
           <div class="col-box row2-left-bottom">
             <div class="title-bar">
@@ -148,7 +148,7 @@
             </ul>
           </div>
           <!--厂商大作-->
-          <div class="row4-bottom-left col-box">
+          <div class="row4-bottom-left padding-none col-box">
             <div class="title-bar">
               <span>厂商大作</span>
             </div>
@@ -214,7 +214,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2 col">
+        <div class="col-md-2 padding-none">
           <!--网游排行/单机排行-->
           <div class="row4-right  col-box">
             <div class="title-bar">
@@ -267,7 +267,7 @@
     methods: {
       //游戏下载排行/热门游戏
       get_popular_game: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select14', {
           params: {}
         }).then(function (response) {
@@ -277,7 +277,7 @@
         })
       },
       get_recommend_game: function () {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select15', {
           params: {}
         }).then(function (response) {
@@ -287,8 +287,8 @@
         })
       },
       get_dowmload_rank: function (ol) {
-        var params = '';
-        var self = this;
+        let params = '';
+        const self = this;
         if (ol) {
           params = ol;
         } else {
@@ -317,7 +317,7 @@
       },
       //新品速递
       get_new_game: function (id) {
-        var self = this;
+        const self = this;
         this.$http.get('/api/select20', {
           params: {}
         }).then(function (response) {

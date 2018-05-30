@@ -22,11 +22,11 @@ body {
 }
 
 html, body {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .container {
-  min-width: 1170px !important;
+  /*min-width: 1170px !important;*/
   font-family: "Microsoft YaHei UI";
 }
 span{
@@ -79,7 +79,12 @@ a{
   font-size: 12px;
   font-family: "Microsoft YaHei UI";
 }
-
+.padding-none{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 12px;
+  font-family: "Microsoft YaHei UI";
+}
 /*为了隔断效果，补回前面消掉的padding 给中间一列 或者左侧一列添加*/
 .col-m {
   padding-left: 15px !important;

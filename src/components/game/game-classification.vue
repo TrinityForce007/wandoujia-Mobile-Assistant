@@ -1,7 +1,7 @@
 <template>
   <div class="gameClassification">
     <div class="container">
-      <div class="col-md-2 col-box col">
+      <div class="col-md-2 col-box padding-none">
         <div class="title-bar">
           <span>分类列表</span>
         </div>
@@ -52,9 +52,10 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 padding-none">
         <div class="classification-right-top col-box">
           <ul class="list-inline software-classification3">
+            <li><span style="font-weight: bold;font-size: 14px">标签：</span></li>
             <li v-for="classificationList in classificationLists">
               <span @click="selectList2(classificationList.id)">{{classificationList.name}}</span>
             </li>

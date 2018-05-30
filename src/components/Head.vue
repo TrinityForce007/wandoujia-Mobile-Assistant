@@ -1,11 +1,11 @@
 <template>
   <div class="header">
     <div class="container">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#header">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -13,7 +13,7 @@
             </button>
             <router-link class="navbar-brand hover-green" to="/">豌豆荚</router-link>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="header">
             <ul class="nav navbar-nav">
               <li>
                 <router-link to="/software" class="hover-green">
@@ -103,7 +103,7 @@
     },
     methods: {
       login: function () {
-        var redirect = window.location.href.replace("http://localhost:8080/#/", '');
+        const redirect = window.location.href.replace("http://localhost:8080/#/", '');
         this.$router.push({
           path: '/login',
           query: {redirect: redirect}

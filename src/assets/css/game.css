@@ -6,7 +6,6 @@
 
 .row3-top-left > img {
   float: left;
-
 }
 
 .row3-top-left > img:first-of-type {
@@ -116,4 +115,30 @@
   width: 33.333333%;
   float: left;
   text-align: center;
+}
+
+
+@media screen and (min-width:350px)and (max-width: 450px){
+  .col-l{
+    padding-left: 0 !important;
+  }
+  .col-r{
+    padding-right: 0 !important;
+  }
+  .game-classification li{
+    width: 20%;
+  }
+  .m-sort li{
+    width: 25%;
+  }
+  .row3-img2{
+    display: none;
+  }
+  .row3-top-left div:last-of-type {
+    margin-left: 35px;
+  }
+  .col-m{
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
 }

@@ -72,7 +72,7 @@
           </ul>
         </div>
         <!--右-->
-        <div class="col-md-10 ">
+        <div class="col-md-10">
           <div class="classification-right-top col-box">
             <ul class="list-inline software-classification3">
               <li v-for="classificationList in classificationLists">
@@ -107,6 +107,8 @@
 </template>
 
 <script>
+  import '../../assets/css/software.css'
+  import '../../assets/css/game.css'
   export default {
     name: "softwareClassification",
     data() {
