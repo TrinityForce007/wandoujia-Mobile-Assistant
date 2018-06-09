@@ -45,7 +45,7 @@
         </div>
 
       </div>
-      <div class=" col-box">
+      <div class="col-box">
         <div class="title-bar">
           <span>用户评论</span>
         </div>

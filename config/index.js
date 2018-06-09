@@ -18,10 +18,17 @@ module.exports = {
         }
       },
       '/douban': {
-        target: 'http://api.douban.com/v2/',
+        target: 'https://api.douban.com/v2/',
         changeOrigin:true,
         pathRewrite:{
           '^/douban':''
+        }
+      },
+      '/baidu':{
+        target:'http://tingapi.ting.baidu.com/v1/restserver/ting/',
+        changeOrigin:true,
+        pathRewrite:{
+          '^/baidu':''
         }
       }
     },

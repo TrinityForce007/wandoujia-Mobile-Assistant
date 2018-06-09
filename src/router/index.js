@@ -11,6 +11,7 @@ import Wallpaper from '../components/wallPaper/Wallpaper'
 import Music from '../components/Music'
 import Film from '../components/film/Film'
 import Forum from '../components/Forum'
+import FilmDetail from '../components/film/film-detail'
 
 Vue.use(Router)
 
@@ -69,6 +70,10 @@ export default new Router({
       name: "Film",
       component: Film
     },
+    {
+      path:'/film-detail',
+      component:FilmDetail
+    },
     {//forum界面
       path: '/forum',
       name: "Forum",
@@ -78,7 +83,6 @@ export default new Router({
       path:'/login',
       component: resolve => require(['../components/login.vue'], resolve)
     },
-    ,
     {
       path:'/register',
       component: resolve => require(['../components/register.vue'], resolve)
